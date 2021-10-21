@@ -9,6 +9,11 @@ const DemoList = (props) => {
     console.log('Items sorted');
     return items.sort((a, b) => a - b);
   }, [items]);
+  // The useMemo() hook, memoizes (turns out that is a real word, that for some reason means the same as memorize) what you return from this function
+  // Like with useCallback or useEffect, the second argument is an array of dependencies that tell React when to update sortedList
+  // (in this example, it will update whenever 'items' changes)
+
+
   console.log('DemoList RUNNING');
 
   return (

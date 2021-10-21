@@ -12,6 +12,15 @@ function App() {
   }, []);
 
   const listItems = useMemo(() => [5, 3, 1, 10, 9], []);
+  // We also use useMemo here to ensure that a new array isn't created each time the component re-renders
+  // Otherwise the useMemo in DemoList.js would be useless, as the 'items' prop would be considered a new array each time
+
+  // useCallback vs useMemo
+  // useCallback remembers a function
+  // useMemo remembers the returned value from a function (it 'memoizes' data, basically)
+
+  // Therefore, you're going to use useCallback a lot more often
+  // You'll only use useMemo if calculating that data is performance-intensive (for example, if it involves sorting)
 
   return (
     <div className="app">
