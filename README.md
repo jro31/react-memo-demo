@@ -1,4 +1,4 @@
-Based on *'Section 12: A Look Behind the Scenes of React & Optimization Techniques'* of Academind's *'React - The Complete Guide'* course, this repo has commits of examples with explanations of:
+Based on *'Section 12: A Look Behind the Scenes of React & Optimization Techniques'* of Academind's *['React - The Complete Guide'](https://acad.link/reactjs)* course, this repo has commits of examples with explanations of:
 
 * `React.memo` with primitive value props to only re-evaluate when those props change - [Commit link](https://github.com/jro31/react-memo-demo/commit/49c0321926798553ceffd9f04432f58ad0db5850)
 * `useCallback()` used with `React.memo` with function props to avoid re-evaluating each time the parent component is re-evaluated - [Commit link](https://github.com/jro31/react-memo-demo/commit/d40aca7e8119d3f61b15ff5da8d58152694efa55)
